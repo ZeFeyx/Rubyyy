@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>تغريداتي</title>
+		<style>
+			body {
+				direction: rtl;
+				background-color: #eeeeee;
+			}
+			
+			#content {
+				border: 1px solid #bbbbbb;
+				width: 80%;
+				background-color: #ffffff;
+				padding: 20px;
+				margin: 0 auto;
+			}
+			
+			#site_name {
+				border-bottom: 3px solid #bbbbbb;
+				padding-bottom: 20px;
+			}
+			
+			footer {
+				text-align: center;
+			}
+			
+			.my_tweet {
+				font-size: 18px;
+				margin: 50px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<div id="content">
+			<h1 id="site_name">تغريداتي</h1>
+			
+			<% @my_tweets.each do |t| %>
+				<p class="my_tweet">
+					<%= t %>
+				</p>
+			<% end %> 
+			
+			<footer>
+				<h6>جميع الحقوق محفوظة</h6>
+			</footer>
+		</div>
+		
+	</body>
+</html>
